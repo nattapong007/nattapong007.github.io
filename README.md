@@ -2,7 +2,9 @@
 
 ![alt text](xx.png)
 
-My name is Nattapong Ketkaew.  I am completely infatuated with technologies *computer IT and IT Security*, and I have had the great fortune to be involved job, study and I will do best because "**The winner never resigned and the resigns never wins.**" 
+My name is Nattapong Ketkaew.  I am completely infatuated with technologies *computer IT and IT Security*, 
+and I have had the great fortune to be involved job, study and I will do best because 
+"**The winner never resigned and the resigns never wins.**" 
 
 ## Educational detail
 - 2011-2013 Dhurakij Pundit University, Bachelor of Engineering(Computer Engineering)
