@@ -1,7 +1,7 @@
 # preg_quote
 (PHP 4, PHP 5, PHP 7)
 preg_quote — Quote regular expression characters
-![](img/Webp.png)
+![](/img/Webp.png)
 
 ## ตัวอย่างการใช้งาน
 ```
