@@ -39,3 +39,7 @@ $textbody = preg_replace ("/" . preg_quote($word, '/') . "/",
 Note: This function is binary-safe.
 ```
 
+
+## เพิ่มเติม
+- [PCRE Patterns](https://www.php.net/manual/en/pcre.pattern.php)
+- [escapeshellcmd() - Escape shell metacharacters](https://www.php.net/manual/en/function.escapeshellcmd.php)
