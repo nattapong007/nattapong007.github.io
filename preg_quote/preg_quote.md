@@ -33,3 +33,9 @@ $textbody = preg_replace ("/" . preg_quote($word, '/') . "/",
                           $textbody);
 ?>
 ```
+
+# Notes
+```
+Note: This function is binary-safe.
+```
+
