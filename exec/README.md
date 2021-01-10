@@ -1,7 +1,6 @@
+
 # exec
 (PHP 4, PHP 5, PHP 7)
-
-![](/img/php-code.png)
 
 exec — เป็นฟังก์ชันที่ให้ PHP ไปเรียกใช้คำสั่ง Command line และจะคืนค่ากลับ (return)มาเป็น string บรรทัดสุดท้ายที่ได้จากการรันคำสั่ง $command
 
