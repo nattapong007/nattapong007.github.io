@@ -1,7 +1,8 @@
 ![](createimage.png)
 
 # PHP | imagestring() Function
-(PHP 4, PHP 5, PHP 7)
+
+(PHP 4, PHP 5, PHP 7)<br>
 **imagestring - การเขียนข้อความลงในภาพ**
 
 ### รูปแบบการใช้งาน
@@ -9,14 +10,10 @@
 imagestring ( resource $image , int $font , int $x , int $y , string $string , int $color ) : bool
 ```
 
-**$image** คือ resource ซี่งอาจได้จากการสร้างโดย [imagecreatetruecolor()](https://www.php.net/manual/en/function.imagecreatetruecolor.php)
-
-**$font** คือ ขนาดของตัวอักษรที่ต้องการ ซึ่งอาจได้จากการสร้างโดย [Imageloadfont()](https://www.php.net/manual/en/function.imageloadfont.php)
-
-**$x** และ **$y** คือ ตำแหน่งเริ่มต้นวาดตามแนวแกน x และ y ของรูปภาพ
-
-**$string** คือ ข้อความที่ต้องการวาด ในรูป UTF-8 และตัวอักษรในรูป &#3585; (รองรับภาษาอื่นๆ รวมทั้งภาษาไทย)
-
+**$image** คือ resource ซี่งอาจได้จากการสร้างโดย [imagecreatetruecolor()](https://www.php.net/manual/en/function.imagecreatetruecolor.php)<br>
+**$font** คือ ขนาดของตัวอักษรที่ต้องการ ซึ่งอาจได้จากการสร้างโดย [Imageloadfont()](https://www.php.net/manual/en/function.imageloadfont.php)<br>
+**$x** และ **$y** คือ ตำแหน่งเริ่มต้นวาดตามแนวแกน x และ y ของรูปภาพ<br>
+**$string** คือ ข้อความที่ต้องการวาด ในรูป UTF-8 และตัวอักษรในรูป &#3585; (รองรับภาษาอื่นๆ รวมทั้งภาษาไทย)<br>
 **$color** คือ resource ของสีของตัวอักษรที่ต้องการ อาจได้มาจากการสร้างโดย [imagecolorallocate()](https://www.php.net/manual/en/function.imagecolorallocate.php)
 ```
 ตัวอย่างสี ขาว ดำ แดง เขียว และน้ำเงิน
