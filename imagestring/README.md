@@ -86,3 +86,4 @@ imagedestroy($im);
 ```
 ### Reference
 https://www.php.net/manual/en/function.imagestring.php
+https://www.geeksforgeeks.org/php-imagestring-function/
