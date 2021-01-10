@@ -1,45 +1,47 @@
-# preg_quote
+# exec
 (PHP 4, PHP 5, PHP 7)
-preg_quote — Quote regular expression characters
-![](/img/Webp.png)
 
-## ตัวอย่างการใช้งาน
+![](/img/php-code.png)
+
+exec — เป็นฟังก์ชันที่ให้ PHP ไปเรียกใช้คำสั่ง Command line และจะคืนค่ากลับ (return)มาเป็น string บรรทัดสุดท้ายที่ได้จากการรันคำสั่ง $command
+
+### รูปแบบการใช้งาน
 ```
-preg_quote ( string $str , string|null $delimiter = null ) : string
+exec ( string $command , array &$output = null , int &$result_code = null ) : string|false
 ```
 
-preg_quote () คือ การเพิ่มเครื่องหมาย backslashes หน้าอักขระพิเศษ (characters) เช่น \ + * ? [ ^ ] $ ( ) { } = ! < > | : - ด้วยฟังก์ชั่น
+**$command** คือ คำสั่งที่เราต้องการจะรัน
 
-ตัวอย่างการใช้งานที่ 1 preg_quote()
+**$output** คือ ตัวแปรที่ใช้เก็บผลรับของการรันคำสั่ง $command ที่แสดงออกมา
+
+**$result_code** คือ ค่าที่คำสั่ง $command ให้คืนกลับมา (return)
+
+
+
+### ตัวอย่างการใช้งานฟังก์ชัน exec()
 ```
 <?php
-$keywords = '$40 for a g3/400';
-$keywords = preg_quote($keywords, '/');
-echo $keywords; // returns \$40 for a g3\/400
+// outputs the username that owns the running php/httpd process
+// (on a system with the "whoami" executable in the path)
+$output=null;
+$retval=null;
+exec('whoami', $output, $retval);
+echo "Returned with status $retval and output:\n";
+print_r($output);
 ?>
 ```
 
-ตัวอย่างการใช้งานที่ 2 Italicizing a word within some text
+### การแสดงผล
 ```
-<?php
-// In this example, preg_quote($word) is used to keep the
-// asterisks from having special meaning to the regular
-// expression.
-
-$textbody = "This book is *very* difficult to find.";
-$word = "*very*";
-$textbody = preg_replace ("/" . preg_quote($word, '/') . "/",
-                          "<i>" . $word . "</i>",
-                          $textbody);
-?>
+Returned with status 0 and output:
+Array
+(
+    [0] => cmb
+)
 ```
 
-# Notes
-```
-Note: This function is binary-safe.
-```
-
+### Notes
+***Warning*** When allowing user-supplied data to be passed to this function, use [escapeshellarg()](https://www.php.net/manual/en/function.escapeshellarg.php) or [escapeshellcmd()](https://www.php.net/manual/en/function.escapeshellcmd.php) to ensure that users cannot trick the system into executing arbitrary commands.
 
 ## เพิ่มเติม
-- [PCRE Patterns](https://www.php.net/manual/en/pcre.pattern.php)
-- [escapeshellcmd() - Escape shell metacharacters](https://www.php.net/manual/en/function.escapeshellcmd.php)
+https://www.php.net/manual/en/function.exec.php
