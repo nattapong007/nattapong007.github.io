@@ -1,8 +1,10 @@
 ![](223.png)
 # authenticate()
 
-authenticate — การยืนยันตัวตน เป็นการบอกว่าคนที่กำลังเข้ามาในระบบคือใคร และเป็นคนๆนั้นจริงหรือเปล่า
+**authenticate** — การยืนยันตัวตน เป็นการบอกว่าคนที่กำลังเข้ามาในระบบคือใคร และเป็นคนๆนั้นจริงหรือเปล่า ซึ่งแน่นอนว่าเป็นจุดที่สำคัญมากในมุมของความปลอดภัย
 
+### คิดเล่นๆ
+ถ้า **Username** และ **Password** ที่เราใช้ในการยืนยันตัวตนของระบบฐานข้อมูลของเราหรือของององค์กรเรา ถูกโจมตีและ ถูกกลุ่มผู้ไม่หวังดีเข้าถึงระบบฐานข้อมูลของเรา ข้อมูลทุกอย่างที่เป็นข้อมูลส่วนตัว ก็อาจไม่ใช่ข้อมูลส่วนตัวอีกต่อไป
 
 ### รูปแบบการใช้งานที่ไม่ปลอดภัย
 ```
@@ -61,7 +63,7 @@ function authenticate() {
 ```
 
 ### Reference
->https://rules.sonarsource.com/php/type/Vulnerability/RSPEC-3649 <br>
+>[Sonarsource Rule](https://rules.sonarsource.com/php/type/Vulnerability/RSPEC-3649) <br>
 >OWASP SQL Injection Prevention [Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html)<br>
 >[OWASP Top 10 2017 Category A1](https://owasp.org/www-project-top-ten/2017/A1_2017-Injection.html) - Injection<br>
 >[MITRE, CWE-89](https://cwe.mitre.org/data/definitions/89) - Improper Neutralization of Special Elements used in an SQL Command<br>
