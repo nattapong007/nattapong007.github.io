@@ -38,7 +38,6 @@ function authenticate() {
 }
 ```
 
-
 ### ตัวอย่างการใช้งานฟังก์ชันที่ถูกต้อง
 ```
 function authenticate() {
