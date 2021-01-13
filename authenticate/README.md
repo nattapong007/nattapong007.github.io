@@ -61,6 +61,7 @@ function authenticate() {
 ```
 
 ### Reference
+>https://rules.sonarsource.com/php/type/Vulnerability/RSPEC-3649 <br>
 >OWASP SQL Injection Prevention [Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html)<br>
 >[OWASP Top 10 2017 Category A1](https://owasp.org/www-project-top-ten/2017/A1_2017-Injection.html) - Injection<br>
 >[MITRE, CWE-89](https://cwe.mitre.org/data/definitions/89) - Improper Neutralization of Special Elements used in an SQL Command<br>
