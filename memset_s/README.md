@@ -1,4 +1,4 @@
-![](.png)
+![](435.png)
 # memset and memset_s
 
 **memset** และ **memset_s** เป็นการกำหนดจำนวนค่าหรือสมาชิกที่เก็บไว้ในตัวแปร โดยมีประโยชน์คือ ทำให้สามารถกำหนดค่าสมาชิกได้ตามที่ต้องการ<br>
@@ -31,4 +31,6 @@ void f(char *password, size_t bufferSize) {
 }
 ```
 ### Reference
-[SonarSource](https://rules.sonarsource.com/cpp/type/Vulnerability/RSPEC-5798)
+* [SonarSource](https://rules.sonarsource.com/cpp/type/Vulnerability/RSPEC-5798)<br>
+* [OWASP Top 10 2017 Category A3](https://www.owasp.org/index.php/Top_10-2017_A3-Sensitive_Data_Exposure) - Sensitive Data Exposure<br>
+* [MITRE, CWE-14](https://cwe.mitre.org/data/definitions/14.html) - Compiler Removal of Code to Clear Buffers
