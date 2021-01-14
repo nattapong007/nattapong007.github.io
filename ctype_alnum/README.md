@@ -32,4 +32,6 @@ The string foo!#$bar does not consist of all letters or digits.
 
 ### Reference
 [PHP ctype_alnum](https://www.php.net/manual/en/function.ctype-alnum.php)<br>
-[WebDesign Tuutorialz](https://www.webdesigntutorialz.com/2020/11/php-ctypealnum-function.html)
+[WebDesign Tuutorialz](https://www.webdesigntutorialz.com/2020/11/php-ctypealnum-function.html)<br>
+[OWASP Attack Category](https://www.owasp.org/index.php/HTTP_Response_Splitting) - HTTP Response Splitting<br>
+[OWASP Top 10 2017 Category A7](https://www.owasp.org/index.php/Top_10-2017_A7-Cross-Site_Scripting_(XSS)) - Cross-Site Scripting (XSS)
