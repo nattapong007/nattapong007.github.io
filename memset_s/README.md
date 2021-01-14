@@ -8,7 +8,7 @@
 ### ตัวอย่างการใช้งานที่ไม่ควรใช้ memset
 **"memset" should not be used to delete sensitive data**
 
-### ### รูปแบบการใช้งานที่ไม่ปลอดภัย
+### รูปแบบการใช้งานที่ไม่ปลอดภัย
 ```
 void f(char *password, size_t bufferSize) {
   char localToken[256];
